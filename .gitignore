@@ -1,5 +1,5 @@
 .venv/
 __pycache__/
 *.pyc
-tenantdb.sqlite3
+workshop_demo.sqlite3
 .DS_Store

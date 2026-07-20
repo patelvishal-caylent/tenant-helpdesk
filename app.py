@@ -1,4 +1,4 @@
-"""TenantDB — a small fictional multi-tenant support/ops app.
+"""Workshop Demo — a small fictional multi-tenant support/ops app.
 
 Built as a workshop lab repo: entirely synthetic data, no external services,
 no credentials required. Run with `python app.py` after `python seed.py`.
@@ -8,7 +8,7 @@ import sqlite3
 
 from flask import Flask, g, jsonify, render_template
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "tenantdb.sqlite3")
+DB_PATH = os.path.join(os.path.dirname(__file__), "workshop_demo.sqlite3")
 
 app = Flask(__name__)
 

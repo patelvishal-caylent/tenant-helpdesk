@@ -1,4 +1,4 @@
-# TenantDB
+# AdvancedMD Workshop Demo App
 
 A small, entirely fictional multi-tenant support/ops app, built as a hands-on lab
 repo for a Claude Code best-practices workshop. No real company's data, schema,
@@ -7,7 +7,7 @@ made up.
 
 ## What this is
 
-TenantDB is a support portal for a fictional multi-tenant SaaS product. It tracks:
+This is a support portal for a fictional multi-tenant SaaS product. It tracks:
 
 - **Tenants** — customer accounts, each with a size tier (small/medium/large) and
   a cluster type
@@ -31,7 +31,7 @@ only.
 python3 -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python seed.py                 # creates and populates tenantdb.sqlite3
+python seed.py                 # creates and populates workshop_demo.sqlite3
 python app.py                  # starts on http://localhost:5050
 ```
 

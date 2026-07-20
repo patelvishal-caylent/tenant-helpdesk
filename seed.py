@@ -1,8 +1,8 @@
-"""Populate tenantdb.sqlite3 with synthetic seed data. Safe to re-run: drops and rebuilds."""
+"""Populate workshop_demo.sqlite3 with synthetic seed data. Safe to re-run: drops and rebuilds."""
 import sqlite3
 import os
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "tenantdb.sqlite3")
+DB_PATH = os.path.join(os.path.dirname(__file__), "workshop_demo.sqlite3")
 SCHEMA_PATH = os.path.join(os.path.dirname(__file__), "schema.sql")
 
 TENANTS = [
