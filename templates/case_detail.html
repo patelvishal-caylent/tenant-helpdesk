@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Case #{{ case['case_id'] }} · TenantDB{% endblock %}
+{% block content %}
+<h1>Case #{{ case['case_id'] }}: {{ case['subject'] }}</h1>
+<p>
+  {{ case['tenant_name'] }} &middot; {{ case['contact_name'] or 'no contact on file' }}
+  {% if case['contact_email'] %}({{ case['contact_email'] }}){% endif %}
+  &middot; <span class="tag priority-{{ case['priority'] }}">{{ case['priority'] }}</span>
+  &middot; {{ case['status'] }}
+</p>
+
+<div class="card">
+  <h3>Notes</h3>
+  {% for n in notes %}
+  <div class="note"><strong>{{ n['author'] }}</strong> &middot; {{ n['created_at'] }}<br>{{ n['body'] }}</div>
+  {% else %}
+  <p>No notes yet.</p>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Cases · TenantDB{% endblock %}
+{% block content %}
+<h1>Cases</h1>
+<table>
+  <tr><th>Case</th><th>Tenant</th><th>Subject</th><th>Contact</th><th>Status</th><th>Priority</th></tr>
+  {% for c in cases %}
+  <tr>
+    <td><a href="/cases/{{ c['case_id'] }}">#{{ c['case_id'] }}</a></td>
+    <td>{{ c['tenant_name'] }}</td>
+    <td>{{ c['subject'] }}</td>
+    <td>{{ c['contact_name'] or '—' }}</td>
+    <td>{{ c['status'] }}</td>
+    <td><span class="tag priority-{{ c['priority'] }}">{{ c['priority'] }}</span></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

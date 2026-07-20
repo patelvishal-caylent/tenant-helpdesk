@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}{{ tenant['name'] }} · TenantDB{% endblock %}
+{% block content %}
+<h1>{{ tenant['name'] }}</h1>
+<p><span class="tag tier-{{ tenant['tier'] }}">{{ tenant['tier'] }}</span> &middot; {{ tenant['cluster_type'] }}</p>
+
+<div class="card">
+  <h3>Contacts</h3>
+  <table>
+    <tr><th>Name</th><th>Title</th><th>Email</th></tr>
+    {% for c in contacts %}
+    <tr><td>{{ c['name'] }}</td><td>{{ c['title'] }}</td><td>{{ c['email'] }}</td></tr>
+    {% endfor %}
+  </table>
+</div>
+
+<div class="card">
+  <h3>Orders</h3>
+  <table>
+    <tr><th>Order</th><th>Status</th><th>Amount</th></tr>
+    {% for o in orders %}
+    <tr><td>#{{ o['order_id'] }}</td><td>{{ o['status'] }}</td><td>${{ "%.2f"|format(o['amount_cents'] / 100) }}</td></tr>
+    {% endfor %}
+  </table>
+</div>
+
+<div class="card">
+  <h3>Cases</h3>
+  <table>
+    <tr><th>Case</th><th>Subject</th><th>Status</th><th>Priority</th></tr>
+    {% for c in cases %}
+    <tr>
+      <td><a href="/cases/{{ c['case_id'] }}">#{{ c['case_id'] }}</a></td>
+      <td>{{ c['subject'] }}</td>
+      <td>{{ c['status'] }}</td>
+      <td><span class="tag priority-{{ c['priority'] }}">{{ c['priority'] }}</span></td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

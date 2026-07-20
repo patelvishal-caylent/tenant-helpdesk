@@ -1,0 +1,8 @@
+date,server,query_name,avg_duration_ms,execution_count
+2026-07-13,tenantdb-cluster-a-01,usp_GetTenantOrders,42,1180
+2026-07-14,tenantdb-cluster-a-01,usp_GetTenantOrders,45,1204
+2026-07-15,tenantdb-cluster-a-01,usp_GetTenantOrders,41,1150
+2026-07-16,tenantdb-cluster-a-01,usp_GetTenantOrders,3820,1190
+2026-07-17,tenantdb-cluster-a-01,usp_GetTenantOrders,47,1220
+2026-07-18,tenantdb-cluster-a-01,usp_GetTenantOrders,44,1175
+2026-07-19,tenantdb-cluster-a-01,usp_GetTenantOrders,43,1160

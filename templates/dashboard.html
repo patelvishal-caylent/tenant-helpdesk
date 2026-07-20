@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Dashboard · TenantDB{% endblock %}
+{% block content %}
+<h1>Tenants</h1>
+<table>
+  <tr><th>Tenant</th><th>Tier</th><th>Cluster type</th><th>Open cases</th><th>Orders</th></tr>
+  {% for t in tenants %}
+  <tr>
+    <td><a href="/tenants/{{ t['tenant_id'] }}">{{ t['name'] }}</a></td>
+    <td><span class="tag tier-{{ t['tier'] }}">{{ t['tier'] }}</span></td>
+    <td>{{ t['cluster_type'] }}</td>
+    <td>{{ t['open_case_count'] }}</td>
+    <td>{{ t['order_count'] }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

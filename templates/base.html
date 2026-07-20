@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{% block title %}TenantDB{% endblock %}</title>
+<style>
+  body { font-family: -apple-system, Helvetica, Arial, sans-serif; margin: 0; background: #f7f7f8; color: #1a1a1a; }
+  header { background: #1a1a1a; color: #fff; padding: 16px 24px; }
+  header a { color: #fff; text-decoration: none; font-weight: 600; }
+  nav { margin-top: 8px; }
+  nav a { color: #ccc; margin-right: 16px; font-size: 14px; text-decoration: none; }
+  nav a:hover { color: #fff; }
+  main { max-width: 960px; margin: 24px auto; padding: 0 24px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #eee; font-size: 14px; }
+  th { background: #f0f0f0; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+  .tier-large { background: #e3f2fd; }
+  .tier-medium { background: #fff8e1; }
+  .tier-small { background: #f1f8e9; }
+  .priority-escalated { background: #ffebee; color: #b71c1c; }
+  .priority-high { background: #fff3e0; color: #e65100; }
+  .priority-normal { background: #eceff1; }
+  .priority-low { background: #f1f8e9; }
+  .card { background: #fff; border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; }
+  .note { padding: 10px 0; border-bottom: 1px solid #eee; font-size: 14px; }
+</style>
+</head>
+<body>
+<header>
+  <a href="/">TenantDB</a>
+  <nav>
+    <a href="/">Dashboard</a>
+    <a href="/cases">Cases</a>
+    <a href="/api/tenants">API: tenants</a>
+    <a href="/api/cases">API: cases</a>
+  </nav>
+</header>
+<main>
+{% block content %}{% endblock %}
+</main>
+</body>
+</html>
