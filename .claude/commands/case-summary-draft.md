@@ -2,8 +2,8 @@
 description: Quick draft summary of a case for the review pipeline.
 model: claude-sonnet-5
 ---
-Draft a quick review summary of case $1. Use the case-review approach, the case's
-API data (GET /api/cases/$1), and read stored_procedures/usp_UpdateTenantStats.sql
+Draft a quick review summary of case $0. Use the case-review approach, the case's
+API data (GET /api/cases/$0), and read stored_procedures/usp_UpdateTenantStats.sql
 to reason about how the rollup is maintained (read it — do not run it). Keep it to
 a short paragraph. This is a fast first pass; a separate review pass will check it.
 

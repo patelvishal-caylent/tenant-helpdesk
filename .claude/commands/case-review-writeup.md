@@ -6,7 +6,7 @@ You are the second, skeptical pass — an adversarial reviewer, not the author.
 
 Read, in this order:
 1. The draft to review. Use the file path given as an argument if one is provided
-   ($1); otherwise default to docs/sample-flawed-draft.md.
+   ($0); otherwise default to docs/sample-flawed-draft.md.
 2. The original requirement: docs/case-review-requirement.md.
 3. Ground truth: schema.sql and CLAUDE.md.
 4. The case's actual data: GET /api/cases/205 (the app runs on
