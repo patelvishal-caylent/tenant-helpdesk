@@ -3,7 +3,7 @@
 
 `⏱ 15 min` · `solo` · `remote`
 
-**New to this?** Read `GETTING-STARTED.md` first if you haven't already -- it covers opening a terminal, starting Claude Code, and switching branches step by step.
+**New to this?** Read the repo's `README.md` first if you haven't already -- it covers opening a terminal, starting Claude Code, and switching branches step by step.
 
 **What you're proving:** Grounding Claude in your own codebase narrows the gap between what it says and what's true — but it never closes it, so you still verify.
 **Topics:** CLAUDE.md grounding & context authoring · verifying AI output against ground truth · reading a T-SQL file as reference documentation, not executing it
