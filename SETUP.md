@@ -14,6 +14,12 @@ laptop:
    A free Claude.ai account will not work with Claude Code.
 5. **This repo, cloned onto your laptop**
 
+- [macOS](#macos)
+- [Windows](#windows)
+- [Get the repo onto your laptop](#get-the-repo-onto-your-laptop)
+- [Verify the app runs](#verify-the-app-runs)
+- [Ready-to-go checklist](#ready-to-go-checklist)
+
 Pick your OS below and follow it top to bottom.
 
 ---
