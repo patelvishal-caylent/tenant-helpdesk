@@ -8,7 +8,7 @@ and notes — don't rely on the draft pass's context still being present.
 
 Read the draft to review from disk, not from conversation context — the draft
 pass wrote it to a file. Use the file path given as an argument if one is
-provided ($1); otherwise default to docs/case-205-draft.md. This works even
+provided ($0); otherwise default to docs/case-205-draft.md. This works even
 after a /clear or relaunch, since the draft is on disk, not in the conversation.
 
 Given that draft and the API result, check it hard:
