@@ -103,7 +103,7 @@ You're done when, on your own screen:
 | Symptom | Do this |
 |---|---|
 | Claude tries to "run" the procedure, or errors on T-SQL syntax | Paste: *"Don't run this — read `stored_procedures/usp_GetTenantOrders.sql` as a text reference and just tell me the table names in it."* |
-| No `CLAUDE.md` at the repo root after checkout, and you expected one | Confirm you're actually on `lab-l2-work` tracking `origin/lab-l2-start`: `git status`. If it's really missing, `git fetch origin`, then `git checkout lab-l2-start -- CLAUDE.md`. |
+| No `CLAUDE.md` at the repo root after checkout, and you expected one | Confirm you're actually on `lab-l2-work` tracking `origin/lab-l2-start`: `git status`. If it's really missing, `git fetch origin`, then `git checkout origin/lab-l2-start -- CLAUDE.md`. |
 | Claude's Step 1/2 answer came back completely clean — nothing to flag | That's a real, valid result. Write "no mismatch this time, all tables confirmed" and move on — verifying and finding nothing wrong is still verifying. |
 | `/sp-table-map` doesn't show up, or won't trigger | Confirm the file is at exactly `.claude/commands/sp-table-map.md`, then **quit and relaunch Claude Code** — custom commands only register at launch. Self-check: `ls .claude/commands/` |
 | Command runs but the output is empty or garbled | Pass the file path explicitly, and confirm you're in the repo root: `/sp-table-map stored_procedures/usp_UpdateTenantStats.sql` |
