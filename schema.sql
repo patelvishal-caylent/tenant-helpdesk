@@ -1,4 +1,4 @@
--- Workshop demo schema — fictional multi-tenant support/ops system.
+-- Tenant Helpdesk schema — fictional multi-tenant support/ops system.
 -- Entirely synthetic. No resemblance to any real company's data intended.
 
 CREATE TABLE tenants (
