@@ -1,0 +1,6 @@
+# Schema shape (synthetic support/ops system)
+Each tenant has contacts, orders, and cases.
+Case notes live in case_notes; rollups in tenant_stats.
+Known tables: tenants, contacts, orders,
+  cases, case_notes, tenant_stats.
+If a table is not listed here, say you don't know.
