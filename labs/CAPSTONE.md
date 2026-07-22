@@ -177,14 +177,14 @@ No invocation of your own is required to reach done — the filled template is t
 
 | Symptom | Do this |
 |---|---|
-| (SysOps) Review-writeup pass didn't write the file, or the findings are vague | Ask your facilitator for the exact prompt. Still stuck? Restore the reference: `git checkout lab-capstone-solution -- reviews/case-205-review.md` |
+| (SysOps) Review-writeup pass didn't write the file, or the findings are vague | Ask your facilitator for the exact prompt. Still stuck? Restore the reference: `git checkout origin/lab-capstone-solution -- reviews/case-205-review.md` |
 | (Interop) Your own draft came out clean — nothing for the review to catch | Re-run the review pass, pointing it at `docs/sample-flawed-draft.md` instead of your own draft |
 | (Interop) Review output is vague | Ask your facilitator for the exact reviewer prompt |
 | Claude doesn't decline the premature `outbound/` write | That's fine — it's a soft CLAUDE.md reminder, not a hard block. Make the human-approval call yourself, out loud, before the write happens |
-| `CLAUDE.md` or the pre-baked commands got edited or broken | `git checkout lab-capstone-start -- CLAUDE.md .claude/` |
-| The requirement or sample-draft file got edited | `git checkout lab-capstone-start -- docs/case-review-requirement.md docs/sample-flawed-draft.md` |
-| Need the reference final artifact | `git checkout lab-capstone-solution -- outbound/case-205-summary.md` |
+| `CLAUDE.md` or the pre-baked commands got edited or broken | `git checkout origin/lab-capstone-start -- CLAUDE.md .claude/` |
+| The requirement or sample-draft file got edited | `git checkout origin/lab-capstone-start -- docs/case-review-requirement.md docs/sample-flawed-draft.md` |
+| Need the reference final artifact | `git checkout origin/lab-capstone-solution -- outbound/case-205-summary.md` |
 | Database looks corrupted | `python seed.py` once |
-| Time is short | Skip to verify on `lab-capstone-solution`; you still see the loop close |
+| Time is short | Skip to verify: restore just the final artifact — `git checkout origin/lab-capstone-solution -- outbound/case-205-summary.md` — rather than switching branches. A full branch switch conflicts with your own uncommitted work (routine template, review doc); this doesn't. |
 
 **Never** restore `docs/` broadly, and never restore `docs/routine-template.md` specifically, to fix something else — that silently overwrites your filled spec/take-home, and since nothing in this lab is committed, that loss is unrecoverable. Restore files by exact path only.
