@@ -85,7 +85,7 @@ You're done when, on your own screen:
 | Symptom | Do this |
 |---|---|
 | Claude nailed it cold — nothing landed in your Ungrounded column | Ask directly: "does `app.py` call this procedure anywhere?" or "is there anything keeping this live between runs?" Still clean? Write down "grounding already tight — verified against `schema.sql` anyway." That's a valid outcome. |
-| Running low on time / can't finish the `CLAUDE.md` | `git fetch origin`, then `git checkout lab-l1-solution -- CLAUDE.md` to pull in a reference version. Continue at Step 3. |
+| Running low on time / can't finish the `CLAUDE.md` | `git fetch origin`, then `git checkout origin/lab-l1-solution -- CLAUDE.md` to pull in a reference version. Continue at Step 3. |
 | Step 3's answer reads just like Step 1's | Make sure you fully **relaunched** Claude Code before re-asking — quit and restart it. `CLAUDE.md` loads at session start, not mid-session. |
 | `python app.py` says no database found | Run `python seed.py` once, then `python app.py`. Don't re-run `seed.py` if it already succeeded. |
 | Port 5050 is busy | Edit the `app.run(..., port=5050)` line in `app.py`, or stop the conflicting process. (Not required for Steps 1–3 anyway.) |
