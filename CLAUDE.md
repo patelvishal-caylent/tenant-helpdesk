@@ -1,4 +1,4 @@
-# Workshop Demo — Agent Grounding
+# Tenant Helpdesk — Agent Grounding
 
 ## Schema (source of truth: schema.sql)
 Six tables only: tenants, contacts, orders, cases, case_notes, tenant_stats.
