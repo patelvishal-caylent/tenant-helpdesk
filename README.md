@@ -1,4 +1,4 @@
-# AdvancedMD Workshop Demo App
+# Tenant Helpdesk
 
 A small, entirely fictional multi-tenant support/ops app, built as a hands-on lab
 repo for a Claude Code best-practices workshop. No real company's data, schema,
