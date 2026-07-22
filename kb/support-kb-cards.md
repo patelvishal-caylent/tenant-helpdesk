@@ -17,3 +17,9 @@ All data below is synthetic.
 8. Q3 all-hands moved to Thursday at 10am — bring your laptop.
 9. Sticky note: ask Marco whether the deck accent color should match the new brand green.
 10. Heads-up: staging DB was down the morning of 7/12, so ignore that day's numbers when comparing.
+
+---
+## Answer key (TA reference)
+- CLAUDE.md (always-load): 1, 2, 3, 4  — card 4 is the soft PHI rule
+- Skill (load-on-topic): 5, 6, 7  — card 5 seeds the case-review skill
+- Discard: 8 (ephemeral), 9 (off-topic), 10 (expired/time-bound)
