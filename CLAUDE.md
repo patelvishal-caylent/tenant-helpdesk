@@ -1,4 +1,4 @@
-# Workshop Demo — Project Guide
+# Tenant Helpdesk — Project Guide
 
 ## Data model
 - tenants have many contacts, orders, and cases; case_notes belong to a case.
