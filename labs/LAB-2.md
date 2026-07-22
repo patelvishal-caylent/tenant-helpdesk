@@ -3,7 +3,7 @@
 
 `⏱ 18 min` · `solo` · `remote`
 
-**New to this?** Read `GETTING-STARTED.md` first if you haven't already -- it covers opening a terminal, starting Claude Code, and switching branches step by step.
+**New to this?** Read the repo's `README.md` first if you haven't already -- it covers opening a terminal, starting Claude Code, and switching branches step by step.
 
 **What you're proving:** The lookup you retype on every procedure — *what tables does this touch?* — becomes a committed, reusable slash command you can point at anything and trust, because it checks its own answer against the schema.
 **Topics:** authoring a reusable slash command from a repeated prompt · verifying AI output against `schema.sql` · judging AI reasoning on a live anomaly (facilitator-led)
