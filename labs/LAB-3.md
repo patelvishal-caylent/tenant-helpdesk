@@ -3,7 +3,7 @@
 
 `⏱ 18 min` · `solo` · `remote`
 
-**New to this?** Read `GETTING-STARTED.md` first if you haven't already -- it covers opening a terminal, starting Claude Code, and switching branches step by step.
+**New to this?** Read the repo's `README.md` first if you haven't already -- it covers opening a terminal, starting Claude Code, and switching branches step by step.
 
 **What you're proving:** Your Cowork habits become committed, versionable, clone-shareable Claude Code files — and a skill's description is the product: Claude picks the right tool from plain English, no slash required.
 **Topics:** CLAUDE.md-vs-skill sorting (six-month test) · skill authoring by generalization · model tiering + description-based invocation

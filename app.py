@@ -1,6 +1,6 @@
-"""Workshop Demo — a small fictional multi-tenant support/ops app.
+"""Tenant Helpdesk — a small fictional multi-tenant support/ops app.
 
-Built as a workshop lab repo: entirely synthetic data, no external services,
+Built as a hands-on lab repo: entirely synthetic data, no external services,
 no credentials required. Run with `python app.py` after `python seed.py`.
 """
 import os
@@ -8,7 +8,7 @@ import sqlite3
 
 from flask import Flask, g, jsonify, render_template
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "workshop_demo.sqlite3")
+DB_PATH = os.path.join(os.path.dirname(__file__), "tenant_helpdesk.sqlite3")
 
 app = Flask(__name__)
 
