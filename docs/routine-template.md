@@ -1,7 +1,11 @@
-# Routine: <name>
-- Trigger: <what kicks this off>
-- Prompt body: <what the pipeline asks Claude to do>
-- Context sources: <files/routes: schema.sql, GET /api/cases/<id>, ...>
-- Skills invoked: <e.g. case-review>
-- Trust-spectrum position: <auto / review-then-auto / always-human>
-- Success signal:  ← DON'T SKIP THIS FIELD
+# Routine: case-review
+- Trigger: review of an escalated case
+- Prompt body: draft a grounded case summary from schema.sql + the case API,
+  then run a separate adversarial review pass against schema.sql + CLAUDE.md
+  before writing anything to outbound/.
+- Context sources: schema.sql, GET /api/cases/<id>, usp_UpdateTenantStats.sql, CLAUDE.md
+- Skills invoked: case-review
+- Trust-spectrum position: always-human on send
+- Success signal: summary names only tables in schema.sql; preserves case
+  priority (escalated cases flagged ESCALATED); nothing reaches outbound/
+  without the review pass AND explicit human approval.
