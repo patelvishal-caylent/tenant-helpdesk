@@ -186,5 +186,6 @@ to leave it running until the workshop itself.
 - [ ] I have a Claude.ai Pro, Max, or Teams account (not free) and logged in successfully once
 - [ ] The repo is cloned/unzipped on my laptop, and `python app.py` + `http://localhost:5050/` showed a working dashboard
 
-All checked? You're done — see you at the workshop. Read `labs/GETTING-STARTED.md`
-first thing on the day, before your assigned lab card.
+All checked? You're done — see you at the workshop. Read the repo's `README.md`
+first thing on the day (the "First time doing one of these labs?" section), before
+your assigned lab card.
