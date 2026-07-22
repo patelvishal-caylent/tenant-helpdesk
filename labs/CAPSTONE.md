@@ -10,7 +10,7 @@ C1-C10 + CAP1-CAP2. Source design: lab-build/20-capstone-design.md.
 
 `⏱ 15 min` · `solo`
 
-**New to this?** Read `GETTING-STARTED.md` first if you haven't already -- it covers opening a terminal, starting Claude Code, and switching branches step by step.
+**New to this?** Read the repo's `README.md` first if you haven't already -- it covers opening a terminal, starting Claude Code, and switching branches step by step.
 
 **What you're proving:** splitting one confident pass into a cheap drafter plus a skeptical reviewer — writing the review down and gating the send on a human — is the multi-agent win, and you get it with two prompts, not a subagent framework.
 
