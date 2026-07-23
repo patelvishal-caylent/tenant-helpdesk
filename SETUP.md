@@ -146,8 +146,6 @@ for now; you don't need it running yet.
 
 ## Get the repo onto your laptop
 
-### Option A — `git clone` (preferred)
-
 From a terminal, outside any other project folder:
 
 ```bash
@@ -155,18 +153,8 @@ git clone https://github.com/patelvishal-caylent/tenant-helpdesk.git
 cd tenant-helpdesk
 ```
 
-### Option B — download a zip (fallback, if `git clone` doesn't work)
-
-1. Go to https://github.com/patelvishal-caylent/tenant-helpdesk and click the green
-   **Code** button, then **Download ZIP**.
-2. Download it, then unzip it — double-click the `.zip` file on both Mac and Windows.
-3. Move the unzipped folder somewhere you'll find it again, e.g. your Desktop.
-4. Open a terminal and `cd` into that folder (drag the folder onto the terminal window
-   after typing `cd ` to auto-fill the path).
-
-**Note:** with Option B you won't have git branch history — some lab steps (`git fetch`,
-`git checkout`) won't work until you also run `git init` and connect it to the real
-repo. Prefer Option A if you can; ask your facilitator if Option B is your only choice.
+This has to be a real `git clone`, not a zip download — the labs work by switching
+branches (`git fetch`, `git checkout`), which only works with the full repo history.
 
 ## Verify the app runs
 
@@ -190,7 +178,7 @@ to leave it running until the workshop itself.
 - [ ] `git --version` shows a version
 - [ ] `claude --version` shows a version
 - [ ] I have a Claude.ai Pro, Max, or Teams account (not free) and logged in successfully once
-- [ ] The repo is cloned/unzipped on my laptop, and `python app.py` + `http://localhost:5050/` showed a working dashboard
+- [ ] The repo is cloned on my laptop, and `python app.py` + `http://localhost:5050/` showed a working dashboard
 
 All checked? You're done — see you at the workshop. Read `labs/GETTING-STARTED.md`
 first thing on the day, before your assigned lab card.
